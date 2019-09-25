@@ -5,21 +5,21 @@ Nós estamos sempre em busca de profissionais interessantes e interessados, com 
 
 Este teste tem como objetivo avaliar e desafiar você. Não é obrigatório realizá-lo completamente, queremos apenas reconhecer seu esforço e potencial para aprender, se adaptar e tomar decisões.
 
-Vamos ao teste!
+Vamos lá!
 
 ## O Desafio
-Sua missão é criar uma landing page para buscar, listar e detalhar pokémons, usando a API Pokeapi.co.
+Se você estiver em Florianópolis, quanto será que você precisa andar para achar um restaurante? O desafio é utilizar uma das APIs do Google Maps para obter informações de geolocalização a partir de uma pesquisa simples. Em seguida, gerar mapas  para visualizar os dados coletados.
 
-O layout inteiro é livre, mas a lista deverá conter no mínimo o nome do pokémon e a sua respectiva imagem.
+O layout inteiro é livre, mas a lista deverá conter no mínimo a identificação do restaurante.
 
-Sobre a busca, ela poderá ser feita de 3 formas: digitando o nome do pokémon, selecionando um ou mais tipos específicos ou listando todos de uma vez (paginação é sempre bem-vinda!).
+Sobre a busca, ela poderá ser feita digitando o nome do restaurate (paginação é sempre bem-vinda!).
 
-Seria interessante ordenar nossa lista também e pensamos em pelo menos dois tipos: por número do Pokémon (padrão) ou por nome (ordem alfabética). Fique à vontade para fazer mais alguma.
+Seria interessante ordenar nossa lista também e pensamos em pelo menos dois tipos: distância (padrão) ou por nome (ordem alfabética). Fique à vontade para fazer mais alguma.
 
-Mas nossa busca não seria muito útil só com nome e foto de cada Pokémon. Então sugerimos que, ao clicar em um item, abra um modal, com mais detalhes e características dele. Inclusive você pode decidir quais informações seriam mais úteis para nós.
+Mas nossa busca não seria muito útil só com nome do restaurante. Então sugerimos que, ao clicar em um item, abra um modal, com mais detalhes e características dele. Inclusive você pode decidir quais informações seriam mais úteis para nós.
 
-## Consigo fazer?
-Consegue sim! Só precisa saber (ou aprender agora) um pouco sobre as seguintes tecnologias:
+## O que preciso saber?
+Precisas saber (ou aprender agora) um pouco sobre as seguintes tecnologias:
  * HTML
  * CSS
  * Javascript
@@ -32,13 +32,15 @@ Para o desafio ficar mais interessante, decidimos criar umas regras básicas:
  * Na parte de JS, deve utilizar algum framework (ex: VueJS, ReactJS, Angular...tente não usar jQuery), lembrando que Angular é diferencial, pois utilizamos aqui na OMNIHUNTER
 
 
-## Por onde começo?
+## Vamos iniciar?
 Primeiramente, você pode fazer um fork desse repositório aqui, para sua conta do Github, depois disso crie uma branch nova com o seu nome (ex: nome_sobrenome), para podermos indentificá-lo.
 
 Após terminar o desafio, você pode solicitar um pull request para a branch master do nosso repositório. Vamos receber e fazer a avaliação.
 
-## Só isso?
-Só! Mas se estiver motivado, tente preparar o projeto para ser executado e testado de maneira prática, usando alguma ferramenta que facilite isso (ex: npm, yarn, docker, etc...).
+## E depois disso?
+Vamos marcar uma nova reunião para voçê defender a sua abordagem. Neste evento, gostaríamos de saber o que você aprendeu, suas dificuldades e sucessos.
 
-Se preferir, pode publicá-lo em algum servidor de sites estáticos (ex: Firebase, Netlify...), esses exemplos são gratuitos, mas você pode usar um Cloud próprio também (ex: AWS, Digital Ocean, Linode...).
+Bom trabalho!
+
+Equipe OMNIHUNTER
 
