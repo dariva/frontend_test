@@ -16,4 +16,8 @@ export class RestService {
     console.log(place.search)
     return this.http.get(this.BASE_URL + place.search + this.HEADERS + this.API_KEY)
   }
+
+  public getRestaurantsFloripa() {
+    return this.http.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-27.5948698,-48.5482195&radius=1500&type=restaurant&keyword=cruise" + this.API_KEY)
+  }
 }
