@@ -11,11 +11,13 @@ import { Response } from '../models/response';
 })
 export class HomeComponent implements OnInit {
   show: boolean = false;
+  placeInfo1: string = "You are Here";
+  placeInfo2: string = "";
   place = new Place();
   lat: number = -27.5948698;
   lng: number = -48.5482195;
   zoom: number = 11;
-  rests: any
+  rests: any;
 
   constructor( private rest: RestService) { 
   }
@@ -30,9 +32,11 @@ export class HomeComponent implements OnInit {
   setMap(place: Place) {
     this.rest.getPlaceData(place).subscribe((res: Response) => {
       place = res.candidates[0];
-      console.log(res)
-      this.lat = place.geometry.location.lat
-      this.lng = place.geometry.location.lng
+      console.log(res);
+      this.lat = place.geometry.location.lat;
+      this.lng = place.geometry.location.lng;
+      this.placeInfo1 = place.name
+      this.placeInfo2 = place.formatted_address
     })
   }
 }

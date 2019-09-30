@@ -14,7 +14,10 @@
 
 <agm-map id="map" [latitude]="lat" [longitude]="lng" [zoom]="zoom">
         <agm-marker [latitude]="lat" [longitude]="lng" [label]="O">
-                <agm-info-window>You are Here</agm-info-window>
+                <agm-info-window>
+                        <p style="font-weight: 500">{{ placeInfo1 }}<p>
+                        <p>{{ placeInfo2 }}</p>
+                </agm-info-window>
         </agm-marker>
         <app-restaurants *ngIf="show"></app-restaurants>
 </agm-map>
