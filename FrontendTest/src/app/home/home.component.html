@@ -8,7 +8,7 @@
 </form>
 <form (ngSubmit)="seeRestaurantsFloripa()">
         <div>
-        <button mat-raised-button (ngSubmit)="send()">Restaurants</button>
+        <button mat-raised-button (click)="show = !show">Restaurants</button>
         </div>
 </form>
               
@@ -16,6 +16,8 @@
         <agm-marker [latitude]="lat" [longitude]="lng" [label]="'M'">
                 <agm-info-window>Holy</agm-info-window>
         </agm-marker>
-        <agm-marker *ngFor="let position of positions" [latitude]="position.lat"
-                [longitude]="position.lng"></agm-marker>
+        <div *ngIf="show" >
+        <agm-marker *ngFor="let restaurant of results; let i = index" [latitude]="restaurant.geometry.location.lat"
+                [longitude]="restaurant.geometry.location.lng"></agm-marker>
+        </div>
 </agm-map>
