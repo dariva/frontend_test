@@ -16,8 +16,5 @@
         <agm-marker [latitude]="lat" [longitude]="lng" [label]="'M'">
                 <agm-info-window>Holy</agm-info-window>
         </agm-marker>
-        <div *ngIf="show" >
-        <agm-marker *ngFor="let restaurant of results; let i = index" [latitude]="restaurant.geometry.location.lat"
-                [longitude]="restaurant.geometry.location.lng"></agm-marker>
-        </div>
+        <app-restaurants *ngIf="show"></app-restaurants>
 </agm-map>
