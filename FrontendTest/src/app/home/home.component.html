@@ -1,0 +1,14 @@
+<form  class="example-form" #f="ngForm" (ngSubmit)="search(f)">
+        <mat-form-field appearance="fill" color="primary">
+                <mat-label>Search</mat-label>
+                <input name="name" ngModel #first="ngModel" matInput placeholder="Where you want to go?">
+                <mat-icon matSuffix>home</mat-icon>
+                <mat-hint>Press Enter</mat-hint>
+        </mat-form-field>
+</form>
+
+<agm-map [zoom]="8" [latitude]="lat" [longitude]="lng">
+        <agm-marker [latitude]="lat" [longitude]="lng" [label]="'M'">
+                <agm-info-window>Holy</agm-info-window>
+        </agm-marker>
+</agm-map>
