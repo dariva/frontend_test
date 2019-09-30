@@ -4,11 +4,12 @@ agm-map {
 
 button {
   position: fixed;
-  top: 90px;
+  left: 18vw;
+  top: 11px;
   z-index: 99;
   margin: 1vw;
 }
-.example-form1 {
+.form {
   padding: 1vw;
   min-width: 150px;
   max-width: 500px;
@@ -16,12 +17,6 @@ button {
   position: fixed;
   z-index: 99;
 }
-.example-form2 {
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
-}
-
 
 .example-full-width {
   width: 90%;

@@ -28,11 +28,11 @@ export class HomeComponent implements OnInit {
     this.setMap(this.place);
   }
   setMap(place: Place) {
-      this.rest.getPlaceData(place).subscribe((res: Response) => {
-        place = res.candidates[0];
-        console.log(res)
-        this.lat = place.geometry.location.lat
-        this.lng = place.geometry.location.lng
-      })
+    this.rest.getPlaceData(place).subscribe((res: Response) => {
+      place = res.candidates[0];
+      console.log(res)
+      this.lat = place.geometry.location.lat
+      this.lng = place.geometry.location.lng
+    })
   }
 }
