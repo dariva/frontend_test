@@ -1,0 +1,7 @@
+<agm-marker *ngFor="let restaurant of results" [latitude]="restaurant.geometry.location.lat"
+                [longitude]="restaurant.geometry.location.lng">
+                <agm-info-window>
+                    <p style="font-size: 1rem; font-weight: 500;margin: 0 0 0 0" >{{restaurant.name}}</p><br>
+                    <p>{{restaurant.vicinity}}</p>
+                </agm-info-window>
+            </agm-marker>

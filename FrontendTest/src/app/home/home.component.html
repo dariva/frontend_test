@@ -1,0 +1,23 @@
+<form  class="form" #f="ngForm" (ngSubmit)="search(f)">
+        <mat-form-field appearance="fill" color="primary">
+                <mat-label>Search</mat-label>
+                <input name="name" ngModel #first="ngModel" matInput placeholder="Where you want to go?">
+                <mat-icon matSuffix>home</mat-icon>
+                <mat-hint>Press Enter</mat-hint>
+        </mat-form-field>
+</form>
+<form>
+        <div>
+        <button mat-raised-button (click)="show = !show">Restaurants</button>
+        </div>
+</form>
+
+<agm-map id="map" [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+        <agm-marker [latitude]="lat" [longitude]="lng" [label]="O">
+                <agm-info-window>
+                        <p style="font-weight: 500">{{ placeInfo1 }}<p>
+                        <p>{{ placeInfo2 }}</p>
+                </agm-info-window>
+        </agm-marker>
+        <app-restaurants *ngIf="show"></app-restaurants>
+</agm-map>
